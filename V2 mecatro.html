@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Mécatronique - AGV 10 - Contrôle Qualité 
+    </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #005fa3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header img.logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            height: 50px;
+        }
+
+        nav {
+            background-color: #003f6b;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            position: relative;
+            opacity: 1;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: white;
+            left: 0;
+            bottom: -5px;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+            background-color: white;
+        }
+
+        h2 {
+            color: #005fa3;
+        }
+
+        footer {
+            background-color: #005fa3;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+
+        .team-grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .team-member {
+            flex: 1 1 180px;
+            max-width: 180px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid #ccc;
+            margin-bottom: 10px;
+        }
+
+        .team-member h3 {
+            margin: 5px 0 2px;
+            font-size: 1.1em;
+            color: #005fa3;
+            height: 2.4em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .team-member p {
+            font-size: 0.95em;
+            color: #333;
+            height: 3.4em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .media-block {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .media-block img,
+        .media-block video {
+            max-width: 90%;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .media-caption {
+            margin-top: 8px;
+            font-style: italic;
+            color: #555;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .photo-grid img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="logo-icam.png" alt="Logo ICAM" class="logo">
+        <h1>Projet Mécatronique - AGV 10 </h1>
+        <p>Robot Contrôle Qualité & Stockage - Promo A126</p>
+    </header>
+
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#equipe">L'équipe</a>
+        <a href="#etapes">Échéances</a>
+        <a href="#video">Vidéo</a>
+        <a href="#photos">Photos</a>
+    </nav>
+
+    <div class="container">
+        <section id="introduction">
+            <h2>Présentation du projet</h2>
+            <p>L’AGV (Automated Guided Vehicle) 10 est un robot mobile conçu pour inspecter et trier des colis dans un entrepôt logistique. Il détecte les défauts de forme, trie les colis et les dépose dans des zones définies. Ce projet s’inscrit dans une démarche éco-responsable avec des matériaux recyclés et une analyse du cycle de vie.</p>
+        </section>
+
+        <h3>Matériels utilisés</h3>
+        <p>Voici les composants principaux de notre montage AGV :</p>
+        <ul>
+            <li>Chassis / Roues</li>
+            <li>Caméras</li>
+            <li>ESP32</li>
+            <li>Pont en H</li>
+            <li>Raspberry Pi 5</li>
+            <li>Module Bluetooth</li>
+            <li>Batterie</li>
+            <li>Connecteurs et câblage</li>
+            <li>Breadboard</li>
+        </ul>
+
+        <section id="equipe">
+            <h2>Notre Équipe - Groupe 10</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="Photo Alexandru Soit-Vizante.JPG" alt="Alexandru SOIT-VIZANTE">
+                    <h3>Alexandru SOIT-VIZANTE</h3>
+                    <p>Chef de projet, Responsable mécanique</p>
+                </div>
+                <div class="team-member">
+                    <img src="dildar.jpg" alt="Dildar AYDIN">
+                    <h3>Dildar AYDIN</h3>
+                    <p>Responsable montage</p>
+                </div>
+                <div class="team-member">
+                    <img src="samuel.jpg" alt="Samuel VIDAL">
+                    <h3>Samuel VIDAL</h3>
+                    <p>Responsable électronique et programmation</p>
+                </div>
+                <div class="team-member">
+                    <img src="Inès.JPG" alt="Inès TISSOT">
+                    <h3>Inès TISSOT</h3>
+                    <p>Responsable interface et communication</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="etapes">
+            <h2>Échéances du projet</h2>
+            <ul>
+                <li><strong>14 mai 2025</strong> : 1ère Revue de projet</li>
+                <li><strong>3 juin 2025</strong> :  2ème Revue de projet : AGV en fonctionnement</li>
+                <li><strong>25 juin 2025</strong> : Soutenance finale</li>
+            </ul>
+        </section>
+
+        <section id="video">
+            <h2>Vidéos</h2>
+            <video width="100%" height="400" controls>
+                <source src="Vidéo AGV-Roues.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture de vidéos.
+            </video>
+        </section>
+
+        <section id="photos" class="photos-section">
+            <h2>Photos</h2>
+            <div class="photo-grid">
+                <img src="agv1.jpg" alt="AGV 1">
+                <img src="agv2.jpg" alt="AGV 2">
+                <img src="agv3.jpg" alt="AGV 3">
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Projet réalisé dans le cadre de l’ICAM - Tous droits réservés - 2025</p>
+    </footer>
+</body>
+
+</html>
